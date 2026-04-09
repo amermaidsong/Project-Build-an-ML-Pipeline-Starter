@@ -107,7 +107,8 @@ def go(config: DictConfig):
                     "random_seed": config["modeling"]["random_seed"],
                     "stratify_by": config["modeling"]["stratify_by"],
                     "rf_config": rf_config,
-                    "output_artifact": "random_forest_export"
+                    "output_artifact": "random_forest_export",
+                    "max_tfidf_features": config["modeling"]["max_tfidf_features"] # Add this line
                 },
             )
    
